@@ -27,7 +27,7 @@ export const searchRepo = (term: string) => {
                 payload: names
             })
 
-        } catch (error) {
+        } catch (error:any) {
             dispatch({
                 type: ActionType.SEARCH_REPO_ERROR,
                 payload: error.message
